@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element label="Time Tracker" max_length="40" name="x_406215_time_trac_time_tracker" type="collection">
+        <element attributes="edge_encryption_enabled=true" label="Description" max_length="100" name="description" type="string"/>
+        <element attributes="edge_encryption_enabled=true" default="javascript:global.getNextObjNumberPadded();" label="Number" max_length="40" name="number" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Project" max_length="40" name="project" type="string"/>
+        <element attributes="edge_encryption_enabled=true" choice="1" label="Tag" max_length="40" name="tag" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Analisys" value="analisys"/>
+                <element inactive_on_update="false" label="Development" value="development"/>
+                <element inactive_on_update="false" label="Meeting" value="meeting"/>
+                <element inactive_on_update="false" label="Testing" value="testing"/>
+            </choice>
+        </element>
+        <element label="Timer" max_length="40" name="timer" type="glide_time"/>
+    </element>
+</database>
